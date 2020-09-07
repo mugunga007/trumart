@@ -1,0 +1,33 @@
+
+<div class="alert alert-info text-center">
+  <strong>Products in Stores now.</strong>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+
+  </div>
+  <div class="col-md-6">
+<table class="table table-stripped ">
+  <thead>
+    <th>Name</th>
+    <th>Model</th>
+    <th>Entry Date</th>
+    <th>Price</th>
+    <th>Shop Name</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products" >
+    <td>{{p.name}}</td>
+    <td>{{p.model}}</td>
+    <td>{{p.entry_date}}</td>
+    <td >{{p.price}}</td>
+    <td>{{p.shop.name}}</td>
+ 
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="col-md-2">
+  </div>
+</div>
